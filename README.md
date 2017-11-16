@@ -21,7 +21,7 @@ The current player is visible on the page. _e.g. X or O's move_.
 
 ## Steps to setup
 - `git clone https://github.com/fortunee/tic-tac-toe.git`
-- `cd <`cloned-directory`>` _Could be **tic-tac-toe** by_
+- `cd <`cloned-directory`>` _Could be **tic-tac-toe** by default_
 - `npm install`
 - `npm start`
 
