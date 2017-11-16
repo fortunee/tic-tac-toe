@@ -9,6 +9,10 @@ class Box extends Component {
     }
   }
 
+  boxClick(props) {
+    props.updateGameBoard(props.loc, props.turn);
+  }
+
   resetBox(e) {
     console.log(e.target)
     e.target.innerHtml = '';
@@ -16,8 +20,9 @@ class Box extends Component {
 
   render() {
     return (
-        <div className='square' data-square={this.props.dataSquare}></div>
-        // <div className={(this.props.gameResetted) ? 'reset square' : 'square'} data-square={this.props.dataSquare}></div>
+        <div className={'square tile ' + this.props.loc } onClick={() => this.boxClick(this.props)}>
+          <p>{this.props.value}</p>
+        </div>
     );
   }
 }

@@ -24,16 +24,7 @@
 }
 
 .square:hover {
-  background: #eee;
-}
-
-.reset span {
-  visibility: hidden;
-}
-
-.reset:after {
-  content: '';
-  visibility: visible;
+  background: #e6f9e6;
 }
 
 #game {
@@ -47,6 +38,7 @@
   font-size: 25px;
   padding: 15px;
   text-align: center;
+  background: #e6f9e6
 }
 
 #playAgainBtn {
@@ -54,9 +46,9 @@
   margin-left: 95px;
   font-size: 22px;
   padding: 10px;
-  background: green;
-  border: none;
-  color: yellow;
+  background: #e6f9e6;;
+  /* border: none; */
+  color: #616108;
   cursor: pointer;
   border-radius: 5px;
 }
