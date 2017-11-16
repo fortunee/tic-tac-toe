@@ -4,9 +4,6 @@ class Box extends Component {
 
   constructor() {
     super();
-    this.state = {
-
-    }
   }
 
   boxClick(props) {
