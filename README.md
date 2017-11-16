@@ -1,6 +1,6 @@
 # TIC TAC TOE
 
-This is a simple tic tac to game built with ReactJS
+This is a simple tic tac toe game built with ReactJS
 
 ## Game Spec
 **App Component:** The app component have the following methods 
