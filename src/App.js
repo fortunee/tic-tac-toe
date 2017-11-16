@@ -40,7 +40,7 @@ class App extends Component {
     if(topRow.match(/XXX|OOO/)) {
         this.setState({
           winner: this.state.turn,
-          winnerLine: `Player ${this.state.turn} won` 
+          winnerLine: `Game Over: Player ${this.state.turn} won` 
         });
         return;
     }
@@ -49,7 +49,7 @@ class App extends Component {
     if(midRow.match(/XXX|OOO/)) {
         this.setState({
           winner: this.state.turn,
-          winnerLine: `Player ${this.state.turn} won`
+          winnerLine: `Game Over: Player ${this.state.turn} won`
         });
         return;
     }
@@ -58,7 +58,7 @@ class App extends Component {
     if(botRow.match(/XXX|OOO/)) {
         this.setState({
           winner: this.state.turn,
-          winnerLine: `Player ${this.state.turn} won`
+          winnerLine: `Game Over: Player ${this.state.turn} won`
         });
         return;
     }
@@ -67,7 +67,7 @@ class App extends Component {
     if(leftColumn.match(/XXX|OOO/)) {
         this.setState({
           winner: this.state.turn,
-          winnerLine: `Player ${this.state.turn} won`
+          winnerLine: `Game Over: Player ${this.state.turn} won`
         });
         return;
     }
@@ -76,7 +76,7 @@ class App extends Component {
     if(midColumn.match(/XXX|OOO/)) {
         this.setState({
           winner: this.state.turn,
-          winnerLine: `Player ${this.state.turn} won`
+          winnerLine: `Game Over: Player ${this.state.turn} won`
         });
         return;
     }
@@ -85,7 +85,7 @@ class App extends Component {
     if(rightColumn.match(/XXX|OOO/)) {
         this.setState({
           winner: this.state.turn,
-          winnerLine: `Player ${this.state.turn} won`
+          winnerLine: `Game Over: Player ${this.state.turn} won`
         });
         return;
     }
@@ -94,7 +94,7 @@ class App extends Component {
     if(leftDiagonal.match(/XXX|OOO/)) {
         this.setState({
           winner: this.state.turn,
-          winnerLine: `Player ${this.state.turn} won`
+          winnerLine: `Game Over: Player ${this.state.turn} won`
         });
         return;
     }
@@ -103,7 +103,7 @@ class App extends Component {
     if(rightDiagonal.match(/XXX|OOO/)) {
         this.setState({
           winner: this.state.turn,
-          winnerLine: `Player ${this.state.turn} won`
+          winnerLine: `Game Over: Player ${this.state.turn} won`
         });
         return;
     }
@@ -111,7 +111,7 @@ class App extends Component {
     // Calculate tie with number of moves
     let moves = boxes.join('').replace(/ /g, '');
     if(moves.length === 9) {
-        this.setState({winnerLine: 'Game Tie'})
+        this.setState({winnerLine: 'Game Over: Tie'})
     }
 
     this.setState({ turn: (this.state.turn === 'X') ? 'O' : 'X' });
