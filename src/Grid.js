@@ -3,11 +3,6 @@ import React, { Component } from 'react';
 import Box from './Box';
 
 class Grid extends Component {
-
-  constructor() {
-    super();
-  }
-
   render() {
     return (
         <div>

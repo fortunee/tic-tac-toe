@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 
 class Box extends Component {
 
-  constructor() {
-    super();
-  }
-
   boxClick(props) {
     props.updateGameBoard(props.loc);
   }
