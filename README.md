@@ -15,7 +15,8 @@ Most of these methods are passed in as props to the child components below.
 **Box component:** A box component displays the mark that is currently within the box. Which is either "X", "O", or, " ". Clicking on this box runs a method that checks to see if the box is unmarked. 
 
 When the game is over, the players have the option to play again. This is accomplished via resetting the board data with `resetGameBoard` method, NOT refreshing the page.
-It also display if there is either a Win or a Tie, specifying which player has won.
+
+It also notifies the player if there is a Win or a Tie, specifying which player has won.
 
 The current player is visible on the page. _e.g. X or O's move_.
 
