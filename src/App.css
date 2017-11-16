@@ -24,7 +24,7 @@
 }
 
 .square:hover {
-  background: #eee;
+  background: #e6f9e6;
 }
 
 #game {
@@ -34,7 +34,21 @@
   flex-direction: column;
 }
 
-#head {
+#notification {
   font-size: 25px;
   padding: 15px;
+  text-align: center;
+  background: #e6f9e6
+}
+
+#playAgainBtn {
+  margin: 20px;
+  margin-left: 95px;
+  font-size: 22px;
+  padding: 10px;
+  background: #e6f9e6;;
+  /* border: none; */
+  color: #616108;
+  cursor: pointer;
+  border-radius: 5px;
 }
