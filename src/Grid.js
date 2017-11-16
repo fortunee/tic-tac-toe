@@ -18,7 +18,7 @@ class Grid extends Component {
     }
   }
 
-  updateGameBoard(loc, playersTurn) {
+  updateGameBoard(loc) {
     let boxes = this.state.boxes;
     if(boxes[loc] === 'X' || boxes[loc] === 'O' || this.state.winner) {
         // Invalid move

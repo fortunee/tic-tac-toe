@@ -10,12 +10,7 @@ class Box extends Component {
   }
 
   boxClick(props) {
-    props.updateGameBoard(props.loc, props.turn);
-  }
-
-  resetBox(e) {
-    console.log(e.target)
-    e.target.innerHtml = '';
+    props.updateGameBoard(props.loc);
   }
 
   render() {
